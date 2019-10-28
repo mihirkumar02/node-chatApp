@@ -179,6 +179,6 @@ function checkNotAuthenticated(req, res, next) {
     next();
 }
 
-app.listen(port, function(err){
+server.listen(port, function(err){
     console.log("Chat App is live!");
 });
