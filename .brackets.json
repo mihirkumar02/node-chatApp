@@ -1,0 +1,10 @@
+{
+    "jscodehints.detectedExclusions": [
+        "G:/VIT/Fall Sem 2018-2019/BCI 3004 - SECURITY OF E-BASED SYSTEMS/j component/node-chat-app/components/core.js",
+        "G:/VIT/Fall Sem 2018-2019/BCI 3004 - SECURITY OF E-BASED SYSTEMS/j component/node-chat-app/components/enc-base64-min.js",
+        "G:/VIT/Fall Sem 2018-2019/BCI 3004 - SECURITY OF E-BASED SYSTEMS/j component/node-chat-app/components/enc-base64.js",
+        "G:/VIT/Fall Sem 2018-2019/BCI 3004 - SECURITY OF E-BASED SYSTEMS/j component/node-chat-app/public/scripts/components/enc-base64-min.js",
+        "G:/VIT/Fall Sem 2018-2019/BCI 3004 - SECURITY OF E-BASED SYSTEMS/j component/node-chat-app/public/scripts/components/enc-base64.js",
+        "G:/VIT/Fall Sem 2018-2019/BCI 3004 - SECURITY OF E-BASED SYSTEMS/j component/node-chat-app/public/scripts/components/enc-utf16-min.js"
+    ]
+}

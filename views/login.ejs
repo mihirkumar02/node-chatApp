@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CHAT APP</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <style>
+            .btn a{
+                color:white;
+                text-decoration: none;
+            }
+
+            .magic a{
+                color: white;
+                text-decoration: none;
+           }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Admin Login</h1>
+            <% if (messages.error){ %>
+                <%= messages.error %>
+            <% } %>
+            <hr>
+            <div class="btn btn-success">
+              <a href="/index.html">GO BACK</a>
+            </div>
+            <hr>
+            <form action="/login" method="post">
+            <div class="form-group">
+                <label for="username">ENTER USERNAME</label>
+                <input type="text" class="form-control" id="username" name="username" required>
+
+                <label for="password">ENTER PASSWORD</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn btn-success">LOGIN</button>
+            </form>
+            <div class="magic">
+                <a href="/magic">REGISTER</a>
+            </div>
+        </div>
+    </body>
+</html>

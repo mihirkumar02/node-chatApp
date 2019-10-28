@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <title>CHAT APP</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body,html{
+                height: 100%;
+            }
+            .main-container{
+                border-radius: 10px;
+                box-shadow: 2px 2px 10px black;
+                height: 90%;
+                margin-top: 2%;
+            }
+            .left{
+                height: 100%;
+                background-color: #3b3e99;
+                border-radius: 10px 0px 0px 10px;
+                padding: 0px;
+            }
+            .pull-down{
+                position: absolute;
+                bottom: 4px;
+            }
+            .users-list{
+                list-style: none;
+                color: aliceblue;
+                font-size: 18px;
+                text-align: center;
+                padding: 0px;
+                margin: 0px;
+            }
+            .users-list li{
+                text-align: center;
+                padding: 20px 8px;
+                border-bottom: 1px solid rgba(10,10,10,0.2);
+            }
+            .users-list li:hover{
+                background-color: #f23f79;
+            }
+            
+            .right{
+                height: 100%;
+            }
+            .message-field{
+                border-top: 1px solid rgba(10,10,10,0.2);
+                padding-top: 4px;
+            }
+            ul{
+                list-style: none;
+            }
+            .others{
+                text-align: left; 
+            }
+            .others-text{
+                background-color: #989AD7;
+                padding: 8px;
+                border-radius: 4px 10px 20px 4px;
+                width: auto;
+                max-width: 70%;
+                display:inline-block;
+                float: left;
+                clear: both;
+                margin-bottom: 30px;
+                min-width: 100px;
+            }
+            .me{
+                text-align: left;
+                margin-right: 10px;
+            }
+            .me-text{
+                background-color: #F1F1FB;
+                padding: 8px;
+                border-radius: 10px 4px 4px 20px;
+                width: auto;
+                max-width: 70%;
+                display:inline-block;
+                float: right;
+                clear: both;
+                margin-bottom: 30px;
+                min-width: 100px;
+            }
+            .admin{
+                width: 100%;
+                border: 1px 0px solid rgba(10,10,10,0.2);
+                color: rgba(10,10,10,0.2);
+                margin-bottom: 20px;
+                text-align: center;
+                float: none;
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container main-container">
+        <div class="row">
+            <div class="col-sm-3 left">
+            <h2 style="margin: 8px;color: white;">CHAT APP <a href="index.html"><i style="font-size:24px" class="fa pull-right">&#xf08b;</i></a></h2>
+            <br>
+            <p class="pull-down">Chat room ID</p>
+            <p style="margin-left: 8px;">USERS JOINED</p>
+            
+            </div>
+            <div class="col-sm-9 right">
+            <div class="row">
+                <div class="col-sm-12" style="border-bottom: 2px solid rgba(10,10,10,0.2);">
+                    <h3>CHAT ROOM</h3>
+                    <input type="text" class="form-control" id="name" placeholder="Enter Username" required style="display: none;">
+                    <br>
+                </div>
+                <div class="col-sm-12">
+                    <ul style="margin: 20px 8px 8px; padding: 0px; overflow-y: auto; height: 75%;" id="chatList">
+                    </ul>
+                </div>
+                <div class="col-sm-12 pull-down message-field">
+                    <form onsubmit="return sendMessage()">
+                    <div class="form-group col-sm-9">
+                        <input type="text" class="form-control" id="msg" placeholder="Enter Message" autocomplete="off" autofocus required>
+                    </div>
+                    <div class="col-sm-1">
+                        <button type="submit" class="btn btn-primary">SEND</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+            </div>                
+            </div>
+        </div>
+        </div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="scripts/rollups/aes.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="deparam.js"></script>+
+        <script src="/script.js"></script>
+    </body>
+</html>

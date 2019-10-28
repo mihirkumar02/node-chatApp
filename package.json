@@ -1,0 +1,26 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "PROJECT",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aes256": "^1.0.4",
+    "bcrypt": "^3.0.6",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "express-flash": "0.0.2",
+    "express-session": "^1.17.0",
+    "method-override": "^3.0.0",
+    "nexmo": "^2.3.2",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "qrcode": "^1.4.2",
+    "socket.io": "^2.3.0"
+  }
+}
