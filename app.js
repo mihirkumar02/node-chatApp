@@ -1,5 +1,6 @@
 const express = require('express');
 const socketIO = require('socket.io');
+
 const bcrypt = require('bcrypt');
 const passport = require('passport');
 const flash = require('express-flash');
@@ -181,4 +182,4 @@ function checkNotAuthenticated(req, res, next) {
 
 server.listen(port, function(err){
     console.log("Chat App is live!");
-});
+}); 
